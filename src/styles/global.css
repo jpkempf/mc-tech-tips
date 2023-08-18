@@ -117,6 +117,7 @@ pre {
 }
 pre > code {
   all: unset;
+  font-size: 1rem;
 }
 blockquote {
   border-left: 4px solid var(--accent);
