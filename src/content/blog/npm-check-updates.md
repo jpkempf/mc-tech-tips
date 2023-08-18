@@ -27,7 +27,7 @@ Then you can call it either as `npm-check-updates` or with the handy `ncu` alias
 
 When you execute `npm-check-updates` in a folder that contains a `package.json` file, it will give you some output like in the example below:
 
-![Terminal output showing a list of packages. Each package in the list has it's current version and the latest available version standing next to it.](/npm-check-updates-output.webp)</figure>
+![Terminal output showing a list of packages. Each package in the list has it's current version and the latest available version standing next to it.](/mc-tech-tips/npm-check-updates-output.webp)</figure>
 
 Note the different color coding in the output: green for patches, blue for minor updates and red for major updates that might contain breaking changes.
 
