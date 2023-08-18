@@ -1,8 +1,7 @@
 ---
 title: "Keep your npm packages up to date with ncu"
 description: "Describes how to check and update package versions in a package.json file using a CLI tool called npm-check-updates."
-pubDate: "Aug 18 2023"
-heroImage: /npm-check-updates-output.webp
+pubDate: "2023-08-18T17:00:00+02:00"
 ---
 
 `npm-check-updates` is a handy CLI tool that checks your `package.json` lists the current and latest versions for any of your installed packages that aren't already up to date.

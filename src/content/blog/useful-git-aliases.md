@@ -1,7 +1,7 @@
 ---
 title: "Useful git aliases"
 description: "A collection of git aliases both simple and more complex that can boost your productivity"
-pubDate: "Aug 18 2023"
+pubDate: "2023-08-18T18:00:00+02:00"
 ---
 
 If you use `git` on a daily basis, creating aliases for your most often used commands can save you a ton of time. It also means you don't have to remember all the different flags and options for each command, and paired with a decent terminal such as [Warp](https://warp.dev/) you'll even get auto-completion for your aliases! Nice.
