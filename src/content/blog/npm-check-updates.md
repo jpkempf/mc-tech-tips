@@ -1,6 +1,7 @@
 ---
 title: "Keep your npm packages up to date with ncu"
 description: "Describes how to check and update package versions in a package.json file using a CLI tool called npm-check-updates."
+author: "Jan-Philipp Kempf"
 pubDate: "2023-08-18T17:00:00+02:00"
 ---
 

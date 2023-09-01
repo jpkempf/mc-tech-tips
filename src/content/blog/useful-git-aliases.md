@@ -1,6 +1,7 @@
 ---
 title: "Useful git aliases"
 description: "A collection of git aliases both simple and more complex that can boost your productivity"
+author: "Jan-Philipp Kempf"
 pubDate: "2023-08-18T18:00:00+02:00"
 ---
 

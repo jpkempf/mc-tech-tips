@@ -1,6 +1,7 @@
 ---
 title: "Creating a static blog with Astro"
 description: "A quick summary of how this site was created."
+author: "Jan-Philipp Kempf"
 pubDate: "2023-08-18T16:00:00+02:00"
 ---
 
