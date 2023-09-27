@@ -113,6 +113,7 @@ code {
 }
 pre {
   padding: 1.5em;
+  margin: 0 -5em;
   border-radius: 8px;
 }
 pre > code {
