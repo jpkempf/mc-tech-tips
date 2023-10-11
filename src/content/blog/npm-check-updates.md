@@ -3,9 +3,10 @@ title: "Keep your npm packages up to date with ncu"
 description: "Describes how to check and update package versions in a package.json file using a CLI tool called npm-check-updates."
 author: "Jan-Philipp Kempf"
 pubDate: "2023-08-18T17:00:00+02:00"
+updatedDate: "2023-10-11T11:32:00+02:00"
 ---
 
-`npm-check-updates` is a handy CLI tool that checks your `package.json` lists the current and latest versions for any of your installed packages that aren't already up to date.
+[npm-check-updates](https://www.npmjs.com/package/npm-check-updates) is a handy CLI tool that checks your `package.json` lists the current and latest versions for any of your installed packages that aren't already up to date.
 
 #### Executing the command
 
@@ -33,20 +34,18 @@ Note the different color coding in the output: green for patches, blue for minor
 
 #### Applying updates
 
-If you want to update every package from that list to its latest version in one go, you can do this:
+If you want to update _every_ package from that list to its latest version in one go, you can do this:
 
 ```bash
 npx npm-check-updates -u
 ```
 
-> Use this command with caution, as it might cause your application to break, especially if some of your packages are multiple versions behind!
-
-Be sure to test thoroughly that everything still works afterwards, and consult the release notes of the packages that were updated to see if there are any breaking changes. Alternatively, you can also choose to update individual packages:
+However, this becomes less and less useful the more dependencies you have. You might not want to do all major version bumps in one go, or you might have packages that you know you can't or don't want to update right now. Enter interactive mode, ideally paired with the `--format` option:
 
 ```bash
-npx npm-check-updates -u <package-name>
+npx npm-check-updates -i --format group
 ```
 
-This will update your `package.json` file with the new version numbers.
+This lets you choose which dependencies you want to upgrade and which ones you'd rather skip for now. Selecting `group` as your format will group dependencies by patch, minor and major version bumps and pre-select the options that are likely safe to update.
 
-Note that you will still need to run `npm install` to actually install the new versions and update your lock file, if you have one!
+Finally, ncu will prompt you to run `npm install` to actually install the new versions and update your lock file.
