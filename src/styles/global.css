@@ -87,7 +87,7 @@ p {
   margin-bottom: 1em;
 }
 .prose p {
-  margin-bottom: 2em;
+  margin-bottom: 1.25em;
 }
 textarea {
   width: 100%;
@@ -120,11 +120,12 @@ pre > code {
   all: unset;
   font-size: 1rem;
 }
+
 blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
   margin: 0px;
-  font-size: 1.333em;
+  font-size: 1.25em;
 }
 hr {
   border: none;
