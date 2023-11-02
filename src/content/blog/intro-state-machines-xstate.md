@@ -40,7 +40,7 @@ There are a lot of scary-sounding concepts in state machines, such as _actors_, 
 For anything more than a very simple, single-purpose machine, you're going to want to be able to read that machine's current state and context, as well as dispatch events for the machine, from more than one component. This means that you need a single instance of the machine that you can share across components. In state machine lingo, that means you need an [actor](https://stately.ai/docs/actors). This is how you can define one:
 
 ```ts
-// in cartMachine.ts
+// in myExampleMachine.ts
 
 import { createActorContext } from "@xstate/react";
 import { assign, createMachine } from "xstate";
