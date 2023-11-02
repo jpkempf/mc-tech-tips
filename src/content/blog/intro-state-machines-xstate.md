@@ -68,7 +68,7 @@ The next thing we need to do is to make our machine context available to your Re
 ```tsx
 // in _app.tsx or wherever else it's appropriate for you
 
-import { MyExampleMachineContext } from "path/to/cartMachine";
+import { MyExampleMachineContext } from "path/to/myExampleMachine";
 
 // ...
 
@@ -94,7 +94,7 @@ export default AppComponent;
 Finally, in the components where you want to use your machine, you can now use the hook we defined earlier:
 
 ```tsx
-import { useMyExampleMachine } from "path/to/cartMachine";
+import { useMyExampleMachine } from "path/to/myExampleMachine";
 
 const MyComponent = () => {
   const [state, send] = useMyExampleMachine();
