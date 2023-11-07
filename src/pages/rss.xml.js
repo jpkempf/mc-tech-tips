@@ -11,7 +11,7 @@ export async function GET(context) {
     site: context.site,
     items: posts.map((post) => ({
       ...post.data,
-      link: `/mc-tech-tips/${post.slug}/`,
+      link: `/tech-tips/${post.slug}/`,
     })),
   });
 

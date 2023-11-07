@@ -13,7 +13,7 @@ Great question! Let's ask Copilot:
 
 Okay, cool, but what does that actually mean? How about a nice picture instead? Sure! Here's a visualization of a simple state machine:
 
-![Screenshot of a simple state machine created with the Stately Studio editor](/mc-tech-tips/images/intro-state-machines-xstate/state-machine.png)
+![Screenshot of a simple state machine created with the Stately Studio editor](/tech-tips/images/intro-state-machines-xstate/state-machine.png)
 
 The screenshot is from [Stately Studio](https://stately.ai/studio), a tool for designing state machines and exporting them as code that you can use in your application. It also has [an interactive mode](https://stately.ai/registry/editor/0042094c-f8ef-4299-a8ca-a8129b6defb5?machineId=0ce50a28-7299-4a6e-8545-a025d635be86&mode=Simulate) to test the behaviour of your machine.
 
@@ -27,7 +27,7 @@ In UI development, even seemingly small interactions can quickly become more com
 
 Here is a real-world example of a slightly more complex (but still pretty simple) machine that controls a kind of shopping cart:
 
-![Visualization of a slightly more complex state machine from Stately Studio](/mc-tech-tips/images/intro-state-machines-xstate/cart-machine.png)
+![Visualization of a slightly more complex state machine from Stately Studio](/tech-tips/images/intro-state-machines-xstate/cart-machine.png)
 
 Some of the things that this machine accomplishes include: form validation, resetting the cart or replacing it with data coming in from an external event and automatically displaying a success messages on certain events. The components consuming this cart machine need to know about none of this logic; all they do is send events and render UI based on the current state of the machine.
 

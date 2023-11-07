@@ -1,3 +1,3 @@
-export const SITE_TITLE = "Mindcurv Tech Tips";
+export const SITE_TITLE = "Tech Tips";
 export const SITE_DESCRIPTION =
-  "A collection of tech tips from devs at Mindcurv";
+  "A collection of tech tips, articles and links to content from other sources.";
