@@ -29,7 +29,7 @@ Here is a real-world example of a slightly more complex (but still pretty simple
 
 ![Visualization of a slightly more complex state machine from Stately Studio](/tech-tips/images/intro-state-machines-xstate/cart-machine.png)
 
-Some of the things that this machine accomplishes include: form validation, resetting the cart or replacing it with data coming in from an external event and automatically displaying a success messages on certain events. The components consuming this cart machine need to know about none of this logic; all they do is send events and render UI based on the current state of the machine.
+Some of the things that this machine accomplishes include: form validation, resetting the cart or replacing it with data coming in from an external event and automatically displaying a success message on certain events. The components consuming this cart machine need to know about none of this logic; all they do is send events and render UI based on the current state of the machine.
 
 ## Using XState in React
 
