@@ -3,9 +3,12 @@ title: "An introduction to state machines and XState"
 description: "An outline in blog post form for a lightning talk on the same topic"
 author: "Jan-Philipp Kempf"
 pubDate: "2023-11-02T17:42:35+01:00"
+updatedDate: "2023-11-08T15:55:13+01:00"
 ---
 
 ## What's a state machine?
+
+_Update_: [This blog post](https://stately.ai/blog/2023-10-05-what-is-a-state-machine) from the folks at Stately.AI and their [series of free video tutorials](https://www.youtube.com/playlist?list=PLvWgkXBB3dd4I_l-djWVU2UGPyBgKfnTQ) do a much better job of explaining how state machines work than I ever could. Honestly, you should probably just stop reading this post now and head over there instead.
 
 Great question! Let's ask Copilot:
 
@@ -16,8 +19,6 @@ Okay, cool, but what does that actually mean? How about a nice picture instead? 
 ![Screenshot of a simple state machine created with the Stately Studio editor](/tech-tips/images/intro-state-machines-xstate/state-machine.png)
 
 The screenshot is from [Stately Studio](https://stately.ai/studio), a tool for designing state machines and exporting them as code that you can use in your application. It also has [an interactive mode](https://stately.ai/registry/editor/0042094c-f8ef-4299-a8ca-a8129b6defb5?machineId=0ce50a28-7299-4a6e-8545-a025d635be86&mode=Simulate) to test the behaviour of your machine.
-
-The folks at Stately are also the maintainers behind XState, a library for using state machines in your JS/TS application. The [XState docs](https://stately.ai/docs/xstate) and their [series of free video tutorials](https://www.youtube.com/playlist?list=PLvWgkXBB3dd4I_l-djWVU2UGPyBgKfnTQ) do a much better job of explaining how state machines work than I ever could and I highly recommend checking them out.
 
 ## Why use a state machine?
 
@@ -33,7 +34,7 @@ Some of the things that this machine accomplishes include: form validation, rese
 
 ## Using XState in React
 
-There are a lot of scary-sounding concepts in state machines, such as _actors_, _services_, _guards_, _actions_, and more. There are also multiple possible ways of creating, initialising and consuming a machine in your React components. And weirdly—the last time I checked—there isn't a good guide in the XState docs that shows you how to best create a machine in a standalone file and then consume a single instance of that machine, with a shared context, across multiple React components. So here are the steps that I would recommend to achieve this goal:
+There are multiple possible ways of creating, initialising and consuming a state machine in your React components using Xstate, and it's not immediately obvious from the [XState docs](https://stately.ai/docs/xstate) what the best approach is to create a machine in a standalone file and then consume a single instance of that machine, with a shared context, across multiple React components. So here are the steps that I would recommend to achieve this goal.
 
 ### Define your machine
 
