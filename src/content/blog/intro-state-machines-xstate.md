@@ -8,7 +8,7 @@ updatedDate: "2023-11-08T15:55:13+01:00"
 
 ## What's a state machine?
 
-_Update_: [This blog post](https://stately.ai/blog/2023-10-05-what-is-a-state-machine) from the folks at Stately.AI and their [series of free video tutorials](https://www.youtube.com/playlist?list=PLvWgkXBB3dd4I_l-djWVU2UGPyBgKfnTQ) do a much better job of explaining how state machines work than I ever could. Honestly, you should probably just stop reading this post now and head over there instead.
+<small>_Update:_ [This blog post](https://stately.ai/blog/2023-10-05-what-is-a-state-machine) from the folks at Stately.AI and their [series of free video tutorials](https://www.youtube.com/playlist?list=PLvWgkXBB3dd4I_l-djWVU2UGPyBgKfnTQ) do a much better job of explaining how state machines work than I ever could. Honestly, you should probably just stop reading this post now and head over there instead.</small>
 
 Great question! Let's ask Copilot:
 
